@@ -13,9 +13,37 @@
         body {
             background: #000;
             min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .counter-btn {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            color: #888;
+            background: transparent;
+            border: 1px solid #333;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            min-width: 50px;
+        }
+        .counter-btn:hover {
+            color: #fff;
+            border-color: #555;
+            background: rgba(255, 255, 255, 0.05);
         }
     </style>
 </head>
 <body>
+    <button class="counter-btn" id="counter">0</button>
+    <script>
+        const btn = document.getElementById('counter');
+        let count = 0;
+        btn.addEventListener('click', () => {
+            count++;
+            btn.textContent = count;
+        });
+    </script>
 </body>
 </html>
