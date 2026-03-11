@@ -14,8 +14,11 @@
             background: #000;
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            gap: 20px;
+            padding: 20px;
         }
         .counter-btn {
             padding: 0.5rem 1rem;
@@ -33,10 +36,130 @@
             border-color: #555;
             background: rgba(255, 255, 255, 0.05);
         }
+        .ad-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .ad-block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .direct-link {
+            color: #555;
+            font-size: 0.8rem;
+            text-decoration: none;
+        }
+        .direct-link:hover {
+            color: #888;
+        }
     </style>
 </head>
 <body>
-    <button class="counter-btn" id="counter">0</button>
+    <!-- Top row ads -->
+    <div class="ad-container">
+        <!-- 728x90 -->
+        <div class="ad-block">
+            <script>
+                atOptions = {
+                    'key' : 'f878a290ed3f437af29b5827f2aaa677',
+                    'format' : 'iframe',
+                    'height' : 90,
+                    'width' : 728,
+                    'params' : {}
+                };
+            </script>
+            <script src="https://www.highperformanceformat.com/f878a290ed3f437af29b5827f2aaa677/invoke.js"></script>
+        </div>
+    </div>
+
+    <!-- Middle row ads -->
+    <div class="ad-container">
+        <!-- 160x600 -->
+        <div class="ad-block">
+            <script>
+                atOptions = {
+                    'key' : '473f59c8169bfb5f1166a433ca490273',
+                    'format' : 'iframe',
+                    'height' : 600,
+                    'width' : 160,
+                    'params' : {}
+                };
+            </script>
+            <script src="https://www.highperformanceformat.com/473f59c8169bfb5f1166a433ca490273/invoke.js"></script>
+        </div>
+
+        <!-- Center column -->
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+            <!-- 300x250 -->
+            <div class="ad-block">
+                <script>
+                    atOptions = {
+                        'key' : 'c509447cf16349991583742e80852691',
+                        'format' : 'iframe',
+                        'height' : 250,
+                        'width' : 300,
+                        'params' : {}
+                    };
+                </script>
+                <script src="https://www.highperformanceformat.com/c509447cf16349991583742e80852691/invoke.js"></script>
+            </div>
+
+            <!-- Counter button -->
+            <button class="counter-btn" id="counter">0</button>
+
+            <!-- Direct link ad -->
+            <a href="https://www.effectivegatecpm.com/m8hdu2r1?key=ce2ebb93b98763c376d49b07029b120f" target="_blank" class="direct-link">.</a>
+        </div>
+
+        <!-- 160x300 -->
+        <div class="ad-block">
+            <script>
+                atOptions = {
+                    'key' : '79b672a1c14c1acd78f6ecf2ab0466be',
+                    'format' : 'iframe',
+                    'height' : 300,
+                    'width' : 160,
+                    'params' : {}
+                };
+            </script>
+            <script src="https://www.highperformanceformat.com/79b672a1c14c1acd78f6ecf2ab0466be/invoke.js"></script>
+        </div>
+    </div>
+
+    <!-- Bottom row ads -->
+    <div class="ad-container">
+        <!-- 468x60 -->
+        <div class="ad-block">
+            <script>
+                atOptions = {
+                    'key' : '7545abcf90c7d253612e60d991bdc318',
+                    'format' : 'iframe',
+                    'height' : 60,
+                    'width' : 468,
+                    'params' : {}
+                };
+            </script>
+            <script src="https://www.highperformanceformat.com/7545abcf90c7d253612e60d991bdc318/invoke.js"></script>
+        </div>
+
+        <!-- 320x50 -->
+        <div class="ad-block">
+            <script>
+                atOptions = {
+                    'key' : '7122decc6510d2bfce99bd63f8e41485',
+                    'format' : 'iframe',
+                    'height' : 50,
+                    'width' : 320,
+                    'params' : {}
+                };
+            </script>
+            <script src="https://www.highperformanceformat.com/7122decc6510d2bfce99bd63f8e41485/invoke.js"></script>
+        </div>
+    </div>
+
     <script>
         const btn = document.getElementById('counter');
         let count = 0;
@@ -45,5 +168,8 @@
             btn.textContent = count;
         });
     </script>
+
+    <!-- Footer script ad -->
+    <script src="https://pl28891574.effectivegatecpm.com/f8/26/a9/f826a94be77ce16e02a2ca334b3d174e.js"></script>
 </body>
 </html>
